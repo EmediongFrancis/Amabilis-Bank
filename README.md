@@ -6,7 +6,7 @@ Amabilis Bank is the backend service of a basic banking system built with Postgr
 - Record all balance changes:
   - Account entries will be created for every change in balance.
 - Perform money transfer:
-  - Transfer will be done in a consistent manner within a transaction such that both account (sender and receiver) balances are updated if transfer is successful or none of them are in the event of a failed transfer. <br><br>
+  - Transfer will be done in a consistent manner within a transaction such that both account balances (sender and receiver) are updated simultaneously if the transfer is successful or none of them are updated in the event of a failed transfer. <br><br>
 
 | ![Database Schema](https://github.com/EmediongFrancis/Amabilis-Bank/blob/main/assets/Amabilis%20Bank.png) |
 |:--:|
