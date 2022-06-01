@@ -1,4 +1,4 @@
-# Amabilis Bank ![Bank Icon](https://github.com/EmediongFrancis/Amabilis-Bank/blob/main/assets/Bank.svg)
+# Amabilis Bank ![Bank Icon](https://github.com/EmediongFrancis/Amabilis-Bank/blob/main/assets/Bank.png)
 
 Amabilis Bank is the backend service of a basic banking system built with PostgreSQL, Golang, and Docker. This bank will provide APIs for the frontend to:
 - Create and manage accounts:
