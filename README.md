@@ -10,7 +10,7 @@ Amabilis Bank is the backend service of a basic banking system built with Postgr
 
 | ![Database Schema](https://github.com/EmediongFrancis/Amabilis-Bank/blob/main/assets/Amabilis%20Bank.png) |
 |:--:|
-| <b> <h3>Database Schema</h3> </b>
+| <b> Database Schema </b>
 
 
 <h3><i>Work in progress...</i></h3>
