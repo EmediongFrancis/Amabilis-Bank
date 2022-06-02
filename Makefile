@@ -7,5 +7,10 @@ createdb:
 dropdb:
 	docker exec -it postgreslts dropdb --username=bendito --owner=bendito amabilisbank
 
-.PHONY: createdb dropdb postgres
+migrateup:
+	migrate -path databases/migrations -database "postgresql://bendito:krypt.makn@localhost:5432/amabilisbank?sslmode=disable" -verbose up
 
+migratedown:
+	migrate -path databases/migrations -database "postgresql://bendito:krypt.makn@localhost:5432/amabilisbank?sslmode=disable" -verbose down
+
+.PHONY: createdb dropdb postgres migrateup migratedown
