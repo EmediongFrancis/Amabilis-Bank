@@ -13,4 +13,7 @@ migrateup:
 migratedown:
 	migrate -path databases/migrations -database "postgresql://bendito:krypt.makn@localhost:5432/amabilisbank?sslmode=disable" -verbose down
 
-.PHONY: createdb dropdb postgres migrateup migratedown
+sqlc:
+	sqlc generate
+
+.PHONY: createdb dropdb postgres migrateup migratedown sqlc
