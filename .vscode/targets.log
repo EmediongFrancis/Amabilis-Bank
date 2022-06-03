@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun  3 12:26:15 2022
+# Make data base, printed on Fri Jun  3 15:42:50 2022
 
 # Variables
 
@@ -15,7 +15,7 @@ GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-6586761c-9cf5-4b06-866b-d773a511cdfa.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3713eb0a-9621-4b78-9007-6dac8e2e2d21.sock
 # environment
 LC_NAME = en_NG
 # environment
@@ -34,6 +34,8 @@ MAKE_COMMAND := make
 GTK3_MODULES = xapp-gtk3-module
 # environment
 QT_ACCESSIBILITY = 1
+# environment
+GOPATH = /home/emediongfrancis/go
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -89,13 +91,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 9158
+VSCODE_PID = 4735
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/madhatter:@/tmp/.ICE-unix/1704,unix/madhatter:/tmp/.ICE-unix/1704
+SESSION_MANAGER = local/madhatter:@/tmp/.ICE-unix/1680,unix/madhatter:/tmp/.ICE-unix/1680
 # automatic
 *F = $(notdir $*)
 # environment
@@ -123,7 +125,7 @@ MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/emediongfrancis/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/snap/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/snap/bin
+PATH = /home/emediongfrancis/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/go/bin:/root/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/root/.local/bin:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin
 # default
 MAKEFILES := 
 # environment
@@ -141,7 +143,7 @@ LC_TELEPHONE = en_NG
 # automatic
 ?F = $(notdir $?)
 # environment
-DESKTOP_AUTOSTART_ID = 107b820c5a4f84f9e165424380926962700000017040010
+DESKTOP_AUTOSTART_ID = 102a21ca78f602cb2b165426685555139300000016800010
 # environment
 XDG_SEAT = seat0
 # environment
@@ -165,7 +167,7 @@ XDG_VTNR = 2
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-SYSTEMD_EXEC_PID = 1582
+SYSTEMD_EXEC_PID = 1558
 # environment
 DISPLAY = :1
 # environment
@@ -177,7 +179,7 @@ MAKE_VERSION := 4.3
 # environment
 LC_MEASUREMENT = en_NG
 # environment
-SSH_AGENT_PID = 1787
+SSH_AGENT_PID = 1763
 # environment
 LC_PAPER = en_NG
 # environment
@@ -186,6 +188,8 @@ XDG_RUNTIME_DIR = /run/user/1000
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 GTK_OVERLAY_SCROLLING = 0
+# environment
+GOMODCACHE = /home/emediongfrancis/go/pkg/mod
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -199,7 +203,9 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-8442bc21-1.67.2-main.sock
 # environment
-XDG_SESSION_ID = 3
+XDG_SESSION_ID = 2
+# environment
+GOPROXY = https://proxy.golang.org,direct
 # default
 .RECIPEPREFIX := 
 # automatic
@@ -213,7 +219,7 @@ GDMSESSION = cinnamon
 # environment
 LC_IDENTIFICATION = en_NG
 # variable set hash-table stats:
-# Load=101/1024=10%, Rehash=0, Collisions=4/131=3%
+# Load=104/1024=10%, Rehash=0, Collisions=4/134=3%
 
 # Pattern-specific Variable Values
 
@@ -221,9 +227,9 @@ LC_IDENTIFICATION = en_NG
 
 # Directories
 
-# . (device 39, inode 276547): 10 files, no impossibilities.
+# . (device 39, inode 276547): 12 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -242,7 +248,7 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-02 18:20:08.99165774
+#  Last modified 2022-06-03 13:42:29.377942974
 #  File has been updated.
 #  Successfully updated.
 
@@ -272,15 +278,23 @@ migrateup:
 all:
 #  Command line target.
 #  Implicit rule search has been done.
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 #  File does not exist.
 #  File has not been updated.
+
+sqlc:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 17):
+	sqlc generate
 
 postgres:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
@@ -294,25 +308,25 @@ createdb:
 #  recipe to execute (from 'Makefile', line 5):
 	docker exec -it postgreslts createdb --username=bendito --owner=bendito amabilisbank
 
-.PHONY: createdb dropdb postgres migrateup migratedown
+.PHONY: createdb dropdb postgres migrateup migratedown sqlc
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/25=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/27=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 182 B / avg = 8 B
-# current buf: size = 8162 B / used = 182 B / count = 21 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 24 / storage = 204 B / avg = 8 B
+# current buf: size = 8162 B / used = 204 B / count = 24 / avg = 8 B
 
-# strcache performance: lookups = 36 / hit rate = 41%
+# strcache performance: lookups = 41 / hit rate = 41%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=0/36=0%
-# Finished Make data base on Fri Jun  3 12:26:15 2022
+# Load=24/8192=0%, Rehash=0, Collisions=0/41=0%
+# Finished Make data base on Fri Jun  3 15:42:50 2022
 
  
