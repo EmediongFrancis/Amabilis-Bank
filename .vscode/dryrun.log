@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/emediongfrancis/Amabilis-Bank'
+docker run --name postgreslts -p 5432:5432 -e POSTGRES_USER=bendito -e POSTGRES_PASSWORD=krypt.makn -d postgres
+make: Leaving directory '/home/emediongfrancis/Amabilis-Bank'
+ 
