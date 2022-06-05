@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun  3 15:42:50 2022
+# Make data base, printed on Sun Jun  5 02:33:30 2022
 
 # Variables
 
@@ -15,7 +15,7 @@ GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-3713eb0a-9621-4b78-9007-6dac8e2e2d21.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e8643733-1be0-45d3-92c6-be1b4b34d2c5.sock
 # environment
 LC_NAME = en_NG
 # environment
@@ -83,7 +83,7 @@ SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
-XDG_SESSION_DESKTOP = cinnamon
+XDG_SESSION_DESKTOP = gnome
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
 # automatic
@@ -91,13 +91,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4735
+VSCODE_PID = 129868
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/madhatter:@/tmp/.ICE-unix/1680,unix/madhatter:/tmp/.ICE-unix/1680
+SESSION_MANAGER = local/madhatter:@/tmp/.ICE-unix/1873,unix/madhatter:/tmp/.ICE-unix/1873
 # automatic
 *F = $(notdir $*)
 # environment
@@ -119,13 +119,11 @@ MAKECMDGOALS := all
 # environment
 XMODIFIERS = @im=ibus
 # environment
-SHLVL = 1
-# environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /home/emediongfrancis/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/go/bin:/root/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/root/.local/bin:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin
+PATH = /root/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/root/.local/bin:/snap/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin
 # default
 MAKEFILES := 
 # environment
@@ -135,6 +133,8 @@ LC_MONETARY = en_NG
 # environment
 LC_TIME = en_NG
 # environment
+INVOCATION_ID = ac42575d2e1745ab9c77f05ebc2c9cba
+# environment
 VSCODE_LOG_NATIVE = false
 # environment
 USERNAME = emediongfrancis
@@ -143,31 +143,25 @@ LC_TELEPHONE = en_NG
 # automatic
 ?F = $(notdir $?)
 # environment
-DESKTOP_AUTOSTART_ID = 102a21ca78f602cb2b165426685555139300000016800010
+DESKTOP_AUTOSTART_ID = 103a7558bf9136a783165433419152999600000018730019
 # environment
-XDG_SEAT = seat0
-# environment
-GTK_IM_MODULE = ibus
-# environment
-XDG_CURRENT_DESKTOP = X-Cinnamon
+XDG_CURRENT_DESKTOP = GNOME
 # automatic
 +F = $(notdir $+)
 # environment
-DESKTOP_SESSION = cinnamon
+DESKTOP_SESSION = gnome
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = X-Cinnamon
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
-CLUTTER_IM_MODULE = ibus
-# environment
 LOGNAME = emediongfrancis
 # environment
-XDG_VTNR = 2
+GIO_LAUNCHED_DESKTOP_FILE = /home/emediongfrancis/.config/autostart/cairo-dock.desktop
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-SYSTEMD_EXEC_PID = 1558
+SYSTEMD_EXEC_PID = 1873
 # environment
 DISPLAY = :1
 # environment
@@ -177,9 +171,13 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
+MANAGERPID = 1620
+# environment
 LC_MEASUREMENT = en_NG
 # environment
-SSH_AGENT_PID = 1763
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2166
+# environment
+SSH_AGENT_PID = 1826
 # environment
 LC_PAPER = en_NG
 # environment
@@ -187,7 +185,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-GTK_OVERLAY_SCROLLING = 0
+JOURNAL_STREAM = 8:29475
 # environment
 GOMODCACHE = /home/emediongfrancis/go/pkg/mod
 # environment
@@ -203,7 +201,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-8442bc21-1.67.2-main.sock
 # environment
-XDG_SESSION_ID = 2
+IM_CONFIG_PHASE = 1
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -215,11 +213,13 @@ SUFFIXES :=
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
-GDMSESSION = cinnamon
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = gnome
 # environment
 LC_IDENTIFICATION = en_NG
 # variable set hash-table stats:
-# Load=104/1024=10%, Rehash=0, Collisions=4/134=3%
+# Load=104/1024=10%, Rehash=0, Collisions=5/134=4%
 
 # Pattern-specific Variable Values
 
@@ -227,7 +227,7 @@ LC_IDENTIFICATION = en_NG
 
 # Directories
 
-# . (device 39, inode 276547): 12 files, no impossibilities.
+# . (device 26, inode 276547): 12 files, no impossibilities.
 
 # 12 files, no impossibilities in 1 directories.
 
@@ -248,7 +248,7 @@ migratedown:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-03 13:42:29.377942974
+#  Last modified 2022-06-04 15:23:14.939379822
 #  File has been updated.
 #  Successfully updated.
 
@@ -258,7 +258,7 @@ dropdb:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
-	docker exec -it postgreslts dropdb --username=bendito --owner=bendito amabilisbank
+	docker exec -it postgreslts dropdb amabilisbank
 
 migrateup:
 #  Phony target (prerequisite of .PHONY).
@@ -327,6 +327,6 @@ createdb:
 # strcache performance: lookups = 41 / hit rate = 41%
 # hash-table stats:
 # Load=24/8192=0%, Rehash=0, Collisions=0/41=0%
-# Finished Make data base on Fri Jun  3 15:42:50 2022
+# Finished Make data base on Sun Jun  5 02:33:31 2022
 
  
