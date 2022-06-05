@@ -10,6 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
+// Create a random account.
 func CreateRandomAccount(t *testing.T) Account {
 	arg := CreateAccountParams{
 		Owner:    util.RandomOwner(),
@@ -29,10 +30,12 @@ func CreateRandomAccount(t *testing.T) Account {
 	return account
 }
 
+// Test account creation.
 func TestCreateAccount(t *testing.T) {
 	CreateRandomAccount(t)
 }
 
+// Test account querying.
 func TestReadAccount(t *testing.T) {
 	account := CreateRandomAccount(t)
 
@@ -46,6 +49,7 @@ func TestReadAccount(t *testing.T) {
 	require.WithinDuration(t, account.CreatedAt, accountRead.CreatedAt, time.Second)
 }
 
+// Test account updating.
 func TestUpdateAccount(t *testing.T) {
 	account := CreateRandomAccount(t)
 
@@ -65,6 +69,7 @@ func TestUpdateAccount(t *testing.T) {
 	require.WithinDuration(t, account.CreatedAt, accountUpdated.CreatedAt, time.Second)
 }
 
+// Test account deletion.
 func TestDeleteAccount(t *testing.T) {
 	account := CreateRandomAccount(t)
 
@@ -77,6 +82,7 @@ func TestDeleteAccount(t *testing.T) {
 	require.Empty(t, accountRead)
 }
 
+// Test accounts querying.
 func TestReadAccounts(t *testing.T) {
 	for i := 0; i < 10; i++ {
 		CreateRandomAccount(t)
