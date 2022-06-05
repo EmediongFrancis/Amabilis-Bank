@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jun  5 02:33:30 2022
+# Make data base, printed on Sun Jun  5 14:48:26 2022
 
 # Variables
 
@@ -15,7 +17,7 @@ GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e8643733-1be0-45d3-92c6-be1b4b34d2c5.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e61cd551-d7c1-4f09-b4af-af3f44aea450.sock
 # environment
 LC_NAME = en_NG
 # environment
@@ -91,13 +93,13 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 129868
+VSCODE_PID = 3240
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/madhatter:@/tmp/.ICE-unix/1873,unix/madhatter:/tmp/.ICE-unix/1873
+SESSION_MANAGER = local/madhatter:@/tmp/.ICE-unix/1849,unix/madhatter:/tmp/.ICE-unix/1849
 # automatic
 *F = $(notdir $*)
 # environment
@@ -133,7 +135,7 @@ LC_MONETARY = en_NG
 # environment
 LC_TIME = en_NG
 # environment
-INVOCATION_ID = ac42575d2e1745ab9c77f05ebc2c9cba
+INVOCATION_ID = df885c9bef6c4bf5a062ca306066237a
 # environment
 VSCODE_LOG_NATIVE = false
 # environment
@@ -143,7 +145,7 @@ LC_TELEPHONE = en_NG
 # automatic
 ?F = $(notdir $?)
 # environment
-DESKTOP_AUTOSTART_ID = 103a7558bf9136a783165433419152999600000018730019
+DESKTOP_AUTOSTART_ID = 10cd305ac577be09dd165443633686023400000018490019
 # environment
 XDG_CURRENT_DESKTOP = GNOME
 # automatic
@@ -161,7 +163,7 @@ GIO_LAUNCHED_DESKTOP_FILE = /home/emediongfrancis/.config/autostart/cairo-dock.d
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-SYSTEMD_EXEC_PID = 1873
+SYSTEMD_EXEC_PID = 1849
 # environment
 DISPLAY = :1
 # environment
@@ -171,13 +173,13 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-MANAGERPID = 1620
+MANAGERPID = 1595
 # environment
 LC_MEASUREMENT = en_NG
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2166
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2171
 # environment
-SSH_AGENT_PID = 1826
+SSH_AGENT_PID = 1801
 # environment
 LC_PAPER = en_NG
 # environment
@@ -185,7 +187,7 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-JOURNAL_STREAM = 8:29475
+JOURNAL_STREAM = 8:29345
 # environment
 GOMODCACHE = /home/emediongfrancis/go/pkg/mod
 # environment
@@ -227,9 +229,9 @@ LC_IDENTIFICATION = en_NG
 
 # Directories
 
-# . (device 26, inode 276547): 12 files, no impossibilities.
+# . (device 26, inode 276547): 14 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -279,8 +281,6 @@ all:
 #  Command line target.
 #  Implicit rule search has been done.
  
-make: *** No rule to make target 'all'.  Stop.
-
 #  File does not exist.
 #  File has not been updated.
 
@@ -321,12 +321,12 @@ createdb:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 204 B / avg = 8 B
-# current buf: size = 8162 B / used = 204 B / count = 24 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 26 / storage = 216 B / avg = 8 B
+# current buf: size = 8162 B / used = 216 B / count = 26 / avg = 8 B
 
-# strcache performance: lookups = 41 / hit rate = 41%
+# strcache performance: lookups = 43 / hit rate = 39%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=0/41=0%
-# Finished Make data base on Sun Jun  5 02:33:31 2022
+# Load=26/8192=0%, Rehash=0, Collisions=0/43=0%
+# Finished Make data base on Sun Jun  5 14:48:26 2022
 
  

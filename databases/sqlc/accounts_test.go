@@ -2,15 +2,17 @@ package databases
 
 import (
 	"context"
-	"github.com/stretchr/testify/require"
 	"testing"
+
+	"github.com/EmediongFrancis/Amabilis-Bank/util"
+	"github.com/stretchr/testify/require"
 )
 
 func TestCreateAccount(t *testing.T) {
 	arg := CreateAccountParams{
-		Owner:    "Bendito",
-		Balance:  100,
-		Currency: "USD",
+		Owner:    util.RandomOwner(),
+		Balance:  util.RandomBalance(),
+		Currency: util.RandomCurrency(),
 	}
 
 	account, err := testQueries.CreateAccount(context.Background(), arg)
@@ -19,7 +21,6 @@ func TestCreateAccount(t *testing.T) {
 	require.Equal(t, arg.Owner, account.Owner)
 	require.Equal(t, arg.Balance, account.Balance)
 	require.Equal(t, arg.Currency, account.Currency)
-
 	require.NotZero(t, account.ID)
 	require.NotZero(t, account.CreatedAt)
 }
