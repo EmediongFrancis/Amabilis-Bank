@@ -12,5 +12,14 @@ Amabilis Bank is the backend service of a basic banking system built with Postgr
 |:--:|
 | <b> Database Schema </b>
 
+## Tools & Technologies
+* <b>Golang</b> - Primary Language.
+* <b>PostgreSQL</b> - Database.
+* <b>Docker</b> - Containerization.
+* <b>Git</b> - Version Control.
+* <b>Makefile</b> - Build System Efficiency.
+* <b>TablePlus</b> - Database Management.
+* <b>SQLc</b> - Golang's SQL Compiler Tool (Compiles PostgreSQL code into native Golang).
+* <b>Golang-Testify</b> - Testing Framework.
 
 <h3><i>Work in progress...</i></h3>
