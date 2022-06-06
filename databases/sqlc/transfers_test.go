@@ -56,7 +56,7 @@ func TestGetTransfer(t *testing.T) {
 }
 
 // Test transfers retrieval.
-func TestListTransfer(t *testing.T) {
+func TestListTransfers(t *testing.T) {
 	account1 := CreateRandomAccount(t)
 	account2 := CreateRandomAccount(t)
 
