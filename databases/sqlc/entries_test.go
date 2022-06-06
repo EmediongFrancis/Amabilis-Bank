@@ -9,6 +9,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
+// Create random entry.
 func CreateRandomEntry(t *testing.T, account Account) Entry {
 	arg := CreateEntryParams{
 		AccountID: account.ID,
@@ -28,11 +29,13 @@ func CreateRandomEntry(t *testing.T, account Account) Entry {
 	return entry
 }
 
+// Test entry creation.
 func TestCreateEntry(t *testing.T) {
 	account := CreateRandomAccount(t)
 	CreateRandomEntry(t, account)
 }
 
+// Test entry retrieval.
 func TestGetEntry(t *testing.T) {
 	account := CreateRandomAccount(t)
 	entry1 := CreateRandomEntry(t, account)
@@ -46,6 +49,7 @@ func TestGetEntry(t *testing.T) {
 	require.WithinDuration(t, entry1.CreatedAt, entry2.CreatedAt, time.Second)
 }
 
+// Test entries retrieval.
 func TestListEntries(t *testing.T) {
 	account := CreateRandomAccount(t)
 	for i := 0; i < 10; i++ {
