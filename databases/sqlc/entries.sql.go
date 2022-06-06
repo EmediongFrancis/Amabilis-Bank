@@ -60,6 +60,7 @@ OFFSET $2
 `
 
 type ListEntriesParams struct {
+	AccountID int64 `json:"account_id"`
 	Limit  int32 `json:"limit"`
 	Offset int32 `json:"offset"`
 }
